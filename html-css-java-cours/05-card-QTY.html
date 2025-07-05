@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <!-- card qty featurs --> 
+<title>card-QTY</title>
+</head>
+<body>
+  <button onclick="
+    console.log(`card QTY: ${cardQTY}`);
+    ">show QTY</button>
+  <button onclick="
+  cardQTY++;
+  console.log(`card QTY: ${cardQTY}`);
+  ">Add to card</button>
+  <button onclick="
+  cardQTY +=2;
+  console.log(`card QTY: ${cardQTY}`);
+  ">+2</button>
+  <button onclick="
+  cardQTY = cardQTY +3;
+  console.log(`card QTY: ${cardQTY}`);
+  ">+3</button>
+  <button onclick="cardQTY +=4;
+  console.log(`cardQTY: ${cardQTY}`);">+4</button>
+ 
+  <button onclick="
+  cardQTY = 0;
+  console.log('card was reset');
+  console.log(`card QTY: ${cardQTY}`);
+  ">Reset card</button>
+
+<script>
+let cardQTY = 0;
+</script>
+</body>
+</html>
